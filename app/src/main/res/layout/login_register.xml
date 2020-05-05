@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="@drawable/raja"
+        android:src="@drawable/raja_image_gradient"
+        android:scaleType="fitXY"
+        android:alpha="0.5"
+
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:layout_width="@dimen/_130sdp"
+        android:src="@drawable/logokarnal"
+        android:layout_centerInParent="true"
+        android:layout_height="@dimen/_130sdp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/Register"
+            android:textSize="@dimen/_15sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/buttondesign"
+            android:text="Register"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="Login"
+            android:id="@+id/Login"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/top"
+            android:background="@drawable/buttondesign2"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

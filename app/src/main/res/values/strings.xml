@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">MySmartCity</string>
+    <string name="text">We will send you One Time Password(OTP) to your mobile number</string>
+    <string name="otpe">Enter your OTP code here sent to</string>
+    <string name="google_api_key_maps">AIzaSyCqclfxrpyAEQAYIjz9Y4lpf3LOEgGGBm0</string>
+    <string name="karnal">Karnal, also known as the rice bowl of India, is one of the oldest districts of Haryana. The city has gained importance since Mahabharata era. It is believed that it was founded by Raja Karna, the eldest son of Kunti and hence the city is called the city of Daanvir Karna.The place got its share of fame in 1739 when Nadir Shah defeated Muhammad Shah here.
+
+The city is known as a walled town. The citadel of old time can still be seen in form of Kot Mohalla (Kot means fort). The fort was built by Raja Gajpat Singh of Jind. The fort was used in many ways as British converted it into a residence for Dost Mohammad Khan, Amir of Kabul, part of it was also used as jail and a school was also running in the fort.
+
+Some of the dignitaries have their association with the city of Karnal. Late Dr. Kalpana Chawla, an Indian-American scientist and NASA astronaut was born in a Punjabi Hindu family at Model Town, Karnal. She also did her schooling at Tagore Baal Niketan, Karnal. The first Prime Minister of Pakistan, Liaquat Ali Khan was born in Karnal.
+
+Today, Karnal is also famous for manufacture of agricultural implements and its spares. More than 40% of country agricultural implements and spares are manufactured here.</string>
+    <string-array name="wardNumber">
+        <item>Ward 1</item>
+        <item>Ward 2</item>
+        <item>Ward 3</item>
+        <item>Ward 4</item>
+        <item>Ward 5</item>
+        <item>Ward 6</item>
+        <item>Ward 7</item>
+        <item>Ward 8</item>
+        <item>Ward 9</item>
+        <item>Ward 10</item>
+        <item>Ward 11</item>
+        <item>Ward 12</item>
+        <item>Ward 13</item>
+        <item>Ward 14</item>
+        <item>Ward 15</item>
+        <item>Ward 16</item>
+        <item>Ward 17</item>
+        <item>Ward 18</item>
+    </string-array>
+    <string-array name="category">
+        <item>Water Supply</item>
+        <item>Garbage</item>
+        <item>Sewage</item>
+        <item>Roads and Traffic</item>
+        <item>Street Light</item>
+        <item>Cleaning and Sweeping</item>
+        <item>Health</item>
+        <item>Fire and Saftey</item>
+        <item>Electricity</item>
+        <item>Animal Issues</item>
+        <item>Horiculture</item>
+        <item>Water Drain</item>
+        <item>Pest Control</item>
+        <item>Pollution Control</item>
+
+    </string-array>
+
+</resources>

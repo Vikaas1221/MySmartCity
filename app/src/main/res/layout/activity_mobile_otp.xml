@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/top_layout"
+        android:background="@drawable/relativelayoutdesign"
+        android:layout_height="@dimen/_220sdp">
+        <ImageView
+            android:layout_width="@dimen/_140sdp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/otpicon"
+            android:layout_height="@dimen/_140sdp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bottomlayooutdesign"
+        android:layout_marginTop="@dimen/_180sdp"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Verify your mobile"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:id="@+id/verifyText"
+            android:fontFamily="@font/montserrat"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15sdp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/otpe"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:id="@+id/mobileotp"
+            android:layout_below="@+id/verifyText"
+            android:fontFamily="@font/montserrat"
+            android:textSize="@dimen/_15sdp"
+
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/otp"
+            android:hint="One Time password"
+            android:fontFamily="@font/montserrat"
+            android:inputType="number"
+            android:background="@drawable/edittextdesign"
+            android:drawablePadding="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/ic_mode_edit_black_24dp"
+            android:layout_height="@dimen/_50sdp"/>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_below="@+id/otp"
+            android:id="@+id/framelayout"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/resendCodeLayout"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Resend OTP"
+                android:fontFamily="@font/montserrat"
+                android:layout_centerVertical="true"
+                android:id="@+id/resend"
+                android:visibility="visible"
+                android:textSize="@dimen/_18sdp"
+                android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/timecounter"
+                android:visibility="invisible"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/_18sdp"
+                android:text="10"
+                android:layout_height="wrap_content"/>
+
+        </FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Login"
+            android:textSize="@dimen/_20sdp"
+            android:id="@+id/loginButton"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/buttondesign"
+            android:layout_height="@dimen/_40sdp"/>
+
+           </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardElevation="@dimen/_5sdp"
+        app:cardUseCompatPadding="true"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/hospital_img"
+                android:src="@drawable/logokarnal"
+                android:scaleType="fitXY"
+                android:layout_height="@dimen/_150sdp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/hospital_img"
+                android:text="Laksh Guest House"
+                android:fontFamily="@font/montserrat"
+                android:textSize="@dimen/_18sdp"
+                android:textStyle="bold"
+                android:id="@+id/hospital_name"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_height="wrap_content"/>
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:numStars="5"
+
+                android:id="@+id/rating"
+                style = "?android:attr/ratingBarStyleSmall"
+                android:layout_below="@+id/hospital_img"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_height="wrap_content">
+
+            </RatingBar>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/hospital_name"
+                android:text="Address"
+                android:fontFamily="@font/montserrat"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:id="@+id/hospital_address"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/_5sdp"
+                android:id="@+id/layout"
+                android:layout_below="@+id/hospital_address"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:src="@drawable/ic_location_on_black_24dp"
+                    android:id="@+id/location_symbol"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="@dimen/_20sdp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/location_symbol"
+                    android:text="Near Hospital Chowk Karnal"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/address"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_near_me_black_24dp"
+                    android:layout_height="@dimen/_20sdp"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Specilist"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:id="@+id/specilist_text"
+                android:fontFamily="@font/montserrat"
+                android:textSize="@dimen/_15sdp"
+                android:layout_below="@+id/layout"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/specilist"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="@dimen/_15sdp"
+
+                android:layout_below="@+id/specilist_text"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Contact"
+                android:layout_below="@+id/specilist"
+                android:textStyle="bold"
+                android:id="@+id/c"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="@dimen/_15sdp"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_below="@+id/c"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:id="@+id/viewtag"
+                android:background="#D50E0D0D" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_below="@+id/viewtag"
+                android:text="www.noormahsl.com"
+                android:layout_margin="@dimen/_5sdp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_15sdp"
+                android:id="@+id/website"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_below="@+id/website"
+                android:text="987654321"
+                android:layout_margin="@dimen/_5sdp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_15sdp"
+                android:id="@+id/phone"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

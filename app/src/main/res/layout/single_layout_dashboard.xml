@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:id="@+id/relative"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_190sdp"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardElevation="@dimen/_5sdp"
+        app:cardUseCompatPadding="true"
+        android:layout_height="@dimen/_135sdp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.github.ybq.android.spinkit.SpinKitView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/progress"
+                style="@style/SpinKitView.Small.Circle"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:SpinKit_Color="@color/colorAccent" />
+
+            <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_centerInParent="true"
+            android:id="@+id/icon_dashboard"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:layout_height="@dimen/_50sdp">
+        </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon_dashboard"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:id="@+id/text_dashboard"
+                android:maxLines="2"
+                android:maxWidth="@dimen/_100sdp"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_46sdp"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="bold"
+
+                android:text="Annoucements"
+                android:textSize="@dimen/_10sdp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

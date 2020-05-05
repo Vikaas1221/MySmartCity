@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Profile Details"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserrat"
+        android:textStyle="bold"
+        android:id="@+id/profileText"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_20sdp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/name"
+        android:layout_centerInParent="true"
+        android:hint="Name"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@+id/profileText"
+        android:fontFamily="@font/montserrat"
+        android:paddingLeft="@dimen/_15sdp"
+        android:background="@drawable/profileeditdesign"
+        android:drawablePadding="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+
+        android:layout_height="@dimen/_40sdp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/adress"
+        android:layout_centerInParent="true"
+        android:hint="Adress"
+        android:paddingTop="@dimen/_5sdp"
+        android:gravity="top|left"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@+id/name"
+        android:fontFamily="@font/montserrat"
+        android:paddingLeft="@dimen/_15sdp"
+        android:background="@drawable/profileeditdesign"
+        android:drawablePadding="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+
+        android:layout_height="@dimen/_80sdp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textStyle="bold"
+        android:id="@+id/belong"
+        android:layout_below="@+id/adress"
+        android:textSize="@dimen/_20sdp"
+        android:text="Wheather Belong to Karnal City?"
+        android:layout_height="wrap_content"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:id="@+id/radioGroup"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_below="@+id/belong"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:text="Yes"
+            android:checked="true"
+            android:id="@+id/yes"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:text="No"
+            android:id="@+id/no"
+            android:layout_height="wrap_content"/>
+
+    </RadioGroup>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/wardNo"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:hint="Ward Number"
+        android:focusable="false"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_9sdp"
+        android:textSize="@dimen/_14sdp"
+        android:layout_below="@+id/radioGroup"
+        android:background="@drawable/profileeditdesign"
+        android:layout_height="@dimen/_40sdp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:id="@+id/mobNo"
+        android:hint="Mobile No"
+        android:inputType="number"
+        android:layout_below="@+id/wardNo"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_9sdp"
+        android:textSize="@dimen/_14sdp"
+        android:background="@drawable/profileeditdesign"
+        android:layout_height="@dimen/_40sdp"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:id="@+id/progress"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Proceed"
+        android:textSize="@dimen/_20sdp"
+        android:gravity="center"
+        android:id="@+id/proceed"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:fontFamily="@font/montserrat"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/buttondesign"
+        android:layout_height="@dimen/_40sdp"/>
+</RelativeLayout>

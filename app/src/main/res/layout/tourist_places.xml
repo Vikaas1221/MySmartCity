@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardUseCompatPadding="true"
+        android:id="@+id/card"
+        app:cardElevation="@dimen/_5sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="@dimen/_80sdp"
+                android:id="@+id/hodpitalImage"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_local_hospital_black_24dp"
+                android:layout_height="@dimen/_80sdp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/hodpitalImage"
+                android:layout_margin="@dimen/_5sdp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold"
+                android:text="Karnal Medical Centre"
+                android:id="@+id/hospitalName"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/hodpitalImage"
+                android:layout_below="@+id/hospitalName"
+                android:layout_margin="@dimen/_5sdp"
+                android:id="@+id/hospitalAddress"
+                android:text="More Information"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/montserrat"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/hospitalAddress"
+                android:layout_below="@+id/hospitalName"
+                android:layout_margin="@dimen/_5sdp"
+                android:id="@+id/arrow_down"
+                android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/layout"
+                android:layout_below="@+id/hodpitalImage"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/description"
+                    android:textSize="@dimen/_12sdp"
+
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
